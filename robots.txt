@@ -1,0 +1,12 @@
+# robots.txt pour royaume-fractions.fr
+
+# Autoriser tous les robots à crawler tout le site
+User-agent: *
+Allow: /
+
+# Lien vers le sitemap
+Sitemap: https://royaume-fractions.fr/sitemap.xml
+
+# Informations supplémentaires
+# Ce site éducatif est destiné aux élèves de CE2, CM1 et CM2
+# pour apprendre les fractions en s'amusant

@@ -3,4 +3,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fractions.massahub.network/sitemap.xml
+Sitemap: https://royaume-fractions.fr/sitemap.xml

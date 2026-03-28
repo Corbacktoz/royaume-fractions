@@ -623,6 +623,11 @@
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="fractions CE2, fractions CM1, fractions CM2, jeu maths enfants, exercices fractions, apprendre fractions, jeu éducatif maths gratuit" />
     <meta name="author" content="MassaHub" />
+    <meta name="theme-color" content="#8B5CF6" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
     <!-- Open Graph -->
     <meta property="og:type"        content="website" />
@@ -660,6 +665,19 @@
       "publisher": { "@type": "Organization", "name": "MassaHub", "url": "https://royaume-fractions.fr/" }
     }
     </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "MassaHub",
+      "url": "https://royaume-fractions.fr/",
+      "description": "Créateur de jeux éducatifs mathématiques pour les élèves du cycle 3 (CE2, CM1, CM2).",
+      "sameAs": [
+        "https://fractions.massahub.network/",
+        "https://multiplications.massahub.network/"
+      ]
+    }
+    </script>
 </head>
 <body>
     <div class="floating-shapes">
@@ -669,6 +687,7 @@
         <div class="shape">⅓</div>
     </div>
 
+    <main>
     <div class="container">
         <header>
             <div class="crown">👑</div>
@@ -688,7 +707,7 @@
                     Collecte des badges, bats ton meilleur score et prouve que tu es le <strong>champion des maths</strong> ! 🏆
                 </p>
                 <div style="text-align: center;">
-                    <a href="https://fractions.massahub.network/" class="cta-button">
+                    <a href="https://fractions.massahub.network/" class="cta-button" rel="noopener noreferrer">
                         <span>🎮 JOUER MAINTENANT ! 🎮</span>
                     </a>
                 </div>
@@ -713,7 +732,7 @@
                 Maîtrise les tables de multiplication de <strong>1 à 12</strong> avec 4 niveaux de défi,
                 des badges à collectionner et des confettis pour les champions. 🎉
             </p>
-            <a href="https://multiplications.massahub.network/" class="cta-button-orange">
+            <a href="https://multiplications.massahub.network/" class="cta-button-orange" rel="noopener noreferrer">
                 <span>🦁 JOUER AUX MULTIPLICATIONS ! 🦁</span>
             </a>
         </div>
@@ -789,7 +808,7 @@
             try {
                 const ctrl = new AbortController();
                 setTimeout(() => ctrl.abort(), 5000);
-                const r = await fetch('https://corback.goatcounter.com/counter//.json', { signal: ctrl.signal });
+                const r = await fetch('https://corback.goatcounter.com/counter/%2F.json', { signal: ctrl.signal });
                 if (!r.ok) throw new Error(r.status);
                 const data = await r.json();
                 const n = data.count_unique || data.count || 0;
@@ -805,15 +824,16 @@
         </script>
 
         <div style="text-align: center; margin-top: 60px;">
-            <a href="https://fractions.massahub.network/" class="cta-button">
+            <a href="https://fractions.massahub.network/" class="cta-button" rel="noopener noreferrer">
                 <span>🚀 COMMENCER L'AVENTURE 🚀</span>
             </a>
         </div>
     </div>
+    </main>
 
     <footer>
         <p>🏰 MassaHub — Là où les maths deviennent une aventure 🏰</p>
-        <p style="margin-top: 10px; font-size: 16px;">© 2024 - Tous droits réservés</p>
+        <p style="margin-top: 10px; font-size: 16px;">© 2026 - Tous droits réservés</p>
     </footer>
 
     <script>
